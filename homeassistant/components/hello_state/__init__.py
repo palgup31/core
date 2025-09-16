@@ -14,7 +14,7 @@ DOMAIN = "hello_state"
 CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
 
-def setup(hass: HomeAssistant, base_config: ConfigType) -> bool:  # noqa: D103
+def setup(hass: HomeAssistant, base_config: ConfigType) -> bool:
     """Set up a skeleton component."""
     # States are in the format DOMAIN.OBJECT_ID.
     hass.states.set("hello_state.world", "Pallavi")
